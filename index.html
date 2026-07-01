@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mente Libre: sitio educativo del PEC sobre prevención de adicciones para adolescentes. Información confiable, video, quiz, encuesta y contacto.">
+<title>Mente Libre — Prevención de Adicciones</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════
+     NAVEGACIÓN
+═══════════════════════════════════ -->
+<header>
+  <nav>
+    <a class="logo" href="#inicio"><span>🌿</span> Mente Libre</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="navList">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#informacion">Información</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#encuesta">Encuesta</a></li>
+      <li><a href="#recursos">Ayuda</a></li>
+      <li><a href="#proyecto">Proyecto</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<marquee behavior="scroll" direction="left" scrollamount="6">
+  ✨ BIENVENIDOS A MENTE LIBRE ✨ &nbsp;&nbsp;|&nbsp;&nbsp; INFORMATE Y CUIDATE 🌟 &nbsp;&nbsp;|&nbsp;&nbsp; PROYECTO PEC CECYTEM 🎉 &nbsp;&nbsp;|&nbsp;&nbsp; ¡VISITA TODAS NUESTRAS SECCIONES! 💫
+</marquee>
+
+<!-- ═══════════════════════════════════
+     HERO
+═══════════════════════════════════ -->
+<section id="inicio" class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="badge">Prevención · Información · Ayuda</div>
+      <h1>Decide con información, no con <em>presión</em>.</h1>
+      <p>
+        Mente Libre es un proyecto educativo de estudiantes de CECYTEM, creado como parte de
+        nuestro Proyecto Educativo Comunitario (PEC). Te ayudamos a conocer los riesgos reales
+        de las adicciones para que decidas con información confiable, sin juicios.
+      </p>
+      <div class="btn-group">
+        <a href="#informacion" class="btn">Conocer los riesgos</a>
+        <a href="#recursos" class="btn btn-ghost">Buscar ayuda</a>
+      </div>
+    </div>
+    <div class="hero-icon-wrap">
+      <div class="hero-icon" aria-hidden="true">🧠</div>
+    </div>
+  </div>
+  <div class="hero-counters">
+    <div class="counter">
+      <span class="counter-num">~25 años</span>
+      <span class="counter-desc">Edad hasta la que sigue<br>desarrollándose tu cerebro</span>
+    </div>
+    <div class="counter">
+      <span class="counter-num">800-911-2000</span>
+      <span class="counter-desc">Línea de la Vida<br>(gratuita, 24/7)</span>
+    </div>
+    <div class="counter">
+      <span class="counter-num">0 juicios</span>
+      <span class="counter-desc">Información clara,<br>sin señalar a nadie</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     INFORMACIÓN
+═══════════════════════════════════ -->
+<section id="informacion">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Información</span>
+      <h2>¿Qué son las adicciones?</h2>
+      <p>
+        Una adicción es una dependencia física y/o psicológica hacia una sustancia o una conducta
+        que la persona siente que ya no puede controlar, aunque le cause problemas de salud,
+        familiares o escolares. El cerebro joven, que sigue en desarrollo hasta cerca de los 25
+        años, es especialmente vulnerable a sus efectos.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card alc">
+        <span class="card-icon">🍺</span>
+        <h3>Alcohol</h3>
+        <p>Es una de las sustancias más consumidas socialmente. Afecta el juicio, la coordinación y la memoria, incluso en pequeñas cantidades.</p>
+        <span class="riesgo legal">Legal pero riesgoso</span>
+      </div>
+      <div class="card tab">
+        <span class="card-icon">🚬</span>
+        <h3>Tabaco y vapeadores</h3>
+        <p>La nicotina genera dependencia rápida. Los vapeadores no son "seguros": contienen químicos que también dañan los pulmones.</p>
+        <span class="riesgo legal">Legal, muy adictivo</span>
+      </div>
+      <div class="card mari">
+        <span class="card-icon">🌿</span>
+        <h3>Marihuana</h3>
+        <p>Su consumo en la adolescencia se relaciona con problemas de memoria, concentración y menor rendimiento escolar.</p>
+        <span class="riesgo medio">Riesgo moderado-alto</span>
+      </div>
+      <div class="card dev">
+        <span class="card-icon">🧠</span>
+        <h3>Cerebro en desarrollo</h3>
+        <p>Durante la adolescencia, cualquier sustancia tiene un impacto más fuerte y duradero en el aprendizaje y las emociones.</p>
+        <span class="riesgo alto">Mayor vulnerabilidad</span>
+      </div>
+    </div>
+
+    <!-- Meme + ciencia -->
+    <div class="meme-block">
+      <figure style="margin:0;">
+        <img src="imagen-cerebro-meme.jpeg" alt="Meme de redes sociales sobre imágenes que 'afectan la química del cerebro'">
+        <figcaption>Meme compartido en redes sociales (@academia__marchena)</figcaption>
+      </figure>
+      <div>
+        <h3 style="color:var(--dark); margin-bottom:10px; font-size:1.05rem;">De la broma a la ciencia real</h3>
+        <p>
+          Seguro has visto memes como este. Es broma, pero tiene algo de verdad detrás: tu cerebro
+          tiene un <strong>sistema de recompensa</strong> que libera <strong>dopamina</strong> (un
+          neurotransmisor del placer) cuando haces algo agradable, como reír con un meme o lograr una meta.
+        </p>
+        <p>
+          Las sustancias adictivas provocan una descarga de dopamina mucho más intensa y artificial
+          que cualquier actividad cotidiana. Con el tiempo, el cerebro se acostumbra y necesita
+          consumir más para sentir lo mismo, mientras las actividades normales dejan de generar
+          satisfacción. A esto se le llama <strong>tolerancia</strong>, y es el inicio del ciclo de la adicción.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Consecuencias -->
+<section class="sec-dark">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Impacto real</span>
+      <h2>Consecuencias que vale la pena conocer</h2>
+      <p>Las adicciones no solo afectan el cuerpo: también la escuela, la familia y el futuro.</p>
+    </div>
+    <div class="cons-grid">
+      <div class="cons-card">
+        <h4>🧬 Salud</h4>
+        <ul>
+          <li>Daño hepático y cardiovascular</li>
+          <li>Ansiedad y depresión</li>
+          <li>Pérdida de memoria y concentración</li>
+        </ul>
+      </div>
+      <div class="cons-card">
+        <h4>🏫 Escuela y futuro</h4>
+        <ul>
+          <li>Bajo rendimiento académico</li>
+          <li>Ausentismo escolar</li>
+          <li>Pérdida de metas personales</li>
+        </ul>
+      </div>
+      <div class="cons-card">
+        <h4>👨‍👩‍👧 Familia y amistades</h4>
+        <ul>
+          <li>Pérdida de confianza</li>
+          <li>Conflictos familiares</li>
+          <li>Aislamiento social</li>
+        </ul>
+      </div>
+      <div class="cons-card">
+        <h4>⚖️ Legales y económicas</h4>
+        <ul>
+          <li>Problemas con la ley</li>
+          <li>Accidentes por conducir o actuar bajo efectos</li>
+          <li>Gastos y endeudamiento</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mitos y realidades -->
+<section class="sec-light">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Mitos y realidades</span>
+      <h2>Lo que se dice vs. lo que es cierto</h2>
+    </div>
+    <table class="myth-table">
+      <thead><tr><th>Mito</th><th>Realidad</th></tr></thead>
+      <tbody>
+        <tr><td>"Probar una vez no hace daño."</td><td>El primer consumo es el que abre la puerta al hábito; el riesgo depende de la sustancia, la edad y la frecuencia.</td></tr>
+        <tr><td>"Puedo dejarlo cuando quiera."</td><td>La dependencia cambia la química cerebral; dejarlo suele requerir apoyo profesional y de la familia.</td></tr>
+        <tr><td>"Vapear es inofensivo, es solo vapor."</td><td>Los vapeadores contienen nicotina y otros químicos que también afectan la salud pulmonar y generan adicción.</td></tr>
+        <tr><td>"Si mis amigos lo hacen, a mí no me pasará nada."</td><td>Cada organismo reacciona distinto; el riesgo de dependencia es real para cualquier persona.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     VIDEO
+═══════════════════════════════════ -->
+<section id="video" class="sec-video">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">🎬 Video informativo</span>
+      <h2>Cápsula preparada por el equipo</h2>
+      <p>Un resumen visual de este proyecto sobre prevención de adicciones.</p>
+    </div>
+    <div class="video-wrap">
+      <video controls preload="metadata">
+        <source src="video-informativo.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+      <div class="video-cap">📹 Video del proyecto Mente Libre — equipo Luis Angel</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     QUIZ
+═══════════════════════════════════ -->
+<section id="quiz">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Quiz interactivo</span>
+      <h2>¿Cuánto sabes sobre el riesgo?</h2>
+      <p>Responde y descubre qué tan informado/a estás. Verás la respuesta correcta al instante.</p>
+    </div>
+
+    <form class="quiz-box" id="quiz-form" novalidate>
+      <div class="q-item">
+        <h3>1. ¿Hasta qué edad aproximada sigue desarrollándose el cerebro humano?</h3>
+        <div class="options">
+          <div class="opt"><input type="radio" name="q1" id="q1a"><label for="q1a">Hasta los 12 años</label></div>
+          <div class="opt"><input type="radio" name="q1" id="q1b"><label for="q1b">Hasta cerca de los 25 años</label></div>
+        </div>
+      </div>
+      <div class="q-item">
+        <h3>2. ¿Los vapeadores son una alternativa segura al cigarro?</h3>
+        <div class="options">
+          <div class="opt"><input type="radio" name="q2" id="q2a"><label for="q2a">Sí, no contienen químicos dañinos</label></div>
+          <div class="opt"><input type="radio" name="q2" id="q2b"><label for="q2b">No, contienen nicotina y otros químicos dañinos</label></div>
+        </div>
+      </div>
+      <div class="q-item">
+        <h3>3. Si el consumo empieza a una edad más temprana, el riesgo de dependencia es...</h3>
+        <div class="options">
+          <div class="opt"><input type="radio" name="q3" id="q3a"><label for="q3a">Menor</label></div>
+          <div class="opt"><input type="radio" name="q3" id="q3b"><label for="q3b">Mayor</label></div>
+        </div>
+      </div>
+      <div class="q-item">
+        <h3>4. Si te preocupa que un amigo esté consumiendo alguna sustancia, lo más útil es...</h3>
+        <div class="options">
+          <div class="opt"><input type="radio" name="q4" id="q4a"><label for="q4a">Ignorarlo para no meterte en problemas</label></div>
+          <div class="opt"><input type="radio" name="q4" id="q4b"><label for="q4b">Hablarlo con un adulto de confianza o buscar orientación</label></div>
+        </div>
+      </div>
+      <button type="submit" class="quiz-btn" id="quiz-submit">✔ Enviar respuestas</button>
+      <div class="quiz-resultado" id="quiz-resultado"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     ENCUESTA
+═══════════════════════════════════ -->
+<section id="encuesta" class="sec-light">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Encuesta anónima</span>
+      <h2>¿Qué opina la comunidad estudiantil?</h2>
+      <p>
+        Tus respuestas se guardan solo en este dispositivo (navegador) para mostrar los resultados
+        en vivo, ya que este es un proyecto escolar sin servidor propio. No pedimos tu nombre.
+      </p>
+    </div>
+
+    <div class="encuesta-layout">
+      <form class="survey-form-card" id="survey-form" novalidate>
+        <div class="form-row" id="row-informado">
+          <fieldset>
+            <legend>¿Qué tan informado te sientes sobre los riesgos de las adicciones?</legend>
+            <div class="options">
+              <div class="opt"><input type="radio" id="informado-1" name="informado" value="Muy informado"><label for="informado-1">Muy informado</label></div>
+              <div class="opt"><input type="radio" id="informado-2" name="informado" value="Algo informado"><label for="informado-2">Algo informado</label></div>
+              <div class="opt"><input type="radio" id="informado-3" name="informado" value="Poco informado"><label for="informado-3">Poco informado</label></div>
+              <div class="opt"><input type="radio" id="informado-4" name="informado" value="Nada informado"><label for="informado-4">Nada informado</label></div>
+            </div>
+          </fieldset>
+          <p class="field-error">Selecciona una opción.</p>
+        </div>
+
+        <div class="form-row" id="row-hablar">
+          <fieldset>
+            <legend>¿Qué tan fácil te resultaría hablar con un adulto de confianza?</legend>
+            <div class="options">
+              <div class="opt"><input type="radio" id="hablar-1" name="hablar" value="Muy fácil"><label for="hablar-1">Muy fácil</label></div>
+              <div class="opt"><input type="radio" id="hablar-2" name="hablar" value="Algo fácil"><label for="hablar-2">Algo fácil</label></div>
+              <div class="opt"><input type="radio" id="hablar-3" name="hablar" value="Difícil"><label for="hablar-3">Difícil</label></div>
+              <div class="opt"><input type="radio" id="hablar-4" name="hablar" value="Muy difícil"><label for="hablar-4">Muy difícil</label></div>
+            </div>
+          </fieldset>
+          <p class="field-error">Selecciona una opción.</p>
+        </div>
+
+        <div class="form-row" id="row-presion">
+          <fieldset>
+            <legend>¿Has sentido presión para probar alcohol, tabaco u otras sustancias?</legend>
+            <div class="options">
+              <div class="opt"><input type="radio" id="presion-1" name="presion" value="Nunca"><label for="presion-1">Nunca</label></div>
+              <div class="opt"><input type="radio" id="presion-2" name="presion" value="Pocas veces"><label for="presion-2">Pocas veces</label></div>
+              <div class="opt"><input type="radio" id="presion-3" name="presion" value="Varias veces"><label for="presion-3">Varias veces</label></div>
+              <div class="opt"><input type="radio" id="presion-4" name="presion" value="Muy seguido"><label for="presion-4">Muy seguido</label></div>
+            </div>
+          </fieldset>
+          <p class="field-error">Selecciona una opción.</p>
+        </div>
+
+        <button type="submit" class="quiz-btn">Enviar respuesta</button>
+        <div class="form-success" id="survey-success">¡Gracias por participar! Tu respuesta se agregó a los resultados.</div>
+      </form>
+
+      <div class="bars-card">
+        <h3>📊 Resultados en vivo</h3>
+        <span class="bars-total" id="survey-total">0 respuestas registradas</span>
+        <p class="survey-empty" id="survey-empty">Aún no hay respuestas. ¡Sé el primero en participar!</p>
+        <div id="survey-results"></div>
+        <button type="button" class="link-button" id="survey-clear">Borrar respuestas guardadas en este dispositivo</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     RECURSOS DE AYUDA
+═══════════════════════════════════ -->
+<section id="recursos" class="sec-recursos">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Ayuda disponible</span>
+      <h2>Si tú o alguien que conoces necesita apoyo</h2>
+    </div>
+    <div class="rec-grid">
+      <div class="rec-card">
+        <span class="ri">📞</span>
+        <h3>Línea de la Vida</h3>
+        <p>Gratuita, confidencial y disponible 24/7 para orientación y crisis.</p>
+        <span class="hotline">800-911-2000</span>
+      </div>
+      <div class="rec-card">
+        <span class="ri">🏥</span>
+        <h3>Centros de Integración Juvenil (CIJ)</h3>
+        <p>Institución pública especializada en prevención y tratamiento de adicciones para jóvenes.</p>
+        <span class="hotline">Busca la unidad más cercana</span>
+      </div>
+      <div class="rec-card">
+        <span class="ri">👨‍👩‍👧</span>
+        <h3>Habla con alguien de confianza</h3>
+        <p>Un familiar, maestro u orientador escolar puede ser el primer paso.</p>
+        <span class="hotline">Pedir ayuda es valiente</span>
+      </div>
+      <div class="rec-card">
+        <span class="ri">🆘</span>
+        <h3>Emergencias</h3>
+        <p>En caso de intoxicación o urgencia médica grave, llama de inmediato.</p>
+        <span class="hotline">911</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     PROYECTO: PEC + EQUIPO + CRONOGRAMA
+═══════════════════════════════════ -->
+<section id="proyecto" class="sec-light">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Sobre el proyecto</span>
+      <h2>Objetivo, equipo y cronograma</h2>
+      <p>Este sitio forma parte de un Proyecto Educativo Comunitario (PEC) de CECYTEM.</p>
+    </div>
+
+    <div class="pec-box">
+      <p>
+        <strong>Objetivo del PEC:</strong> este sitio busca prevenir el consumo de sustancias
+        adictivas entre adolescentes, informando sobre sus riesgos reales con datos confiables
+        y un lenguaje cercano, sin juzgar a nadie.
+      </p>
+      <p>
+        Buscamos generar conciencia comunitaria y fomentar la participación: te invitamos a
+        responder el quiz y la encuesta, ver el video y compartir el sitio con tus compañeros,
+        porque la prevención funciona mejor cuando se comparte.
+      </p>
+    </div>
+
+    <h3 style="text-align:center; margin:34px 0 16px; color:var(--dark); font-size:1.05rem;">Equipo de trabajo</h3>
+    <div class="roles-grid">
+      <div class="rol-card">
+        <span class="rol-icon">🎨</span>
+        <h3>Diseño</h3>
+        <span class="rol-nombre">Lizandro Enriquez Cruz</span>
+        <p>Identidad visual, paleta de colores y diagramación de las secciones.</p>
+      </div>
+      <div class="rol-card">
+        <span class="rol-icon">💻</span>
+        <h3>Programación</h3>
+        <span class="rol-nombre">Axel Gabriel Acevedo Jimenez</span>
+        <p>Estructura HTML, estilos CSS y funcionalidad en JavaScript.</p>
+      </div>
+      <div class="rol-card">
+        <span class="rol-icon">📚</span>
+        <h3>Contenido</h3>
+        <span class="rol-nombre">Cesar Sanches Orozco</span>
+        <p>Investigación, redacción de textos preventivos y curaduría de recursos.</p>
+      </div>
+      <div class="rol-card">
+        <span class="rol-icon">🔍</span>
+        <h3>Pruebas</h3>
+        <span class="rol-nombre">Todo el equipo</span>
+        <p>Revisión conjunta de navegación, formularios y diseño responsive.</p>
+      </div>
+    </div>
+
+    <div class="cronograma" style="margin-top:34px;">
+      <h3>Cronograma del proyecto</h3>
+      <table class="crono-table">
+        <thead><tr><th>Semana</th><th>Actividad</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr><td>Semana 1</td><td>Investigación y recopilación de información confiable</td><td><span class="estado">Completado</span></td></tr>
+          <tr><td>Semana 2</td><td>Diseño de estructura y paleta de colores</td><td><span class="estado">Completado</span></td></tr>
+          <tr><td>Semana 3</td><td>Programación en HTML, CSS y JavaScript</td><td><span class="estado">Completado</span></td></tr>
+          <tr><td>Semana 4</td><td>Pruebas de navegación, formularios y diseño responsive</td><td><span class="estado">Completado</span></td></tr>
+          <tr><td>Semana 5</td><td>Ajustes finales y entrega del proyecto</td><td><span class="estado">Completado</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     CONTACTO
+═══════════════════════════════════ -->
+<section id="contacto">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Contáctanos</span>
+      <h2>¿Tienes preguntas o comentarios?</h2>
+      <p>Escríbenos tus dudas sobre el proyecto o comparte información con nosotros.</p>
+    </div>
+
+    <div class="callout-help">
+      <h3>¿Necesitas ayuda urgente?</h3>
+      <p>
+        Este formulario es parte de un proyecto escolar y <strong>nadie lo monitorea en tiempo real</strong>.
+        Si tú o alguien más está en una situación urgente, comunícate directamente a
+        <strong>Línea de la Vida: 800-911-2000</strong> (gratuita, 24/7) o acude con el orientador escolar.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+      <div class="c-info">
+        <h3>Estamos para escucharte</h3>
+        <p>Si tienes dudas sobre el proyecto o quieres compartir información confiable con nosotros, este es el lugar.</p>
+        <div class="c-detail">💾 Tu mensaje se guarda solo en este dispositivo</div>
+        <div class="c-detail">🔒 No pedimos datos sensibles</div>
+        <div class="c-detail">🎓 Proyecto educativo — CECYTEM</div>
+      </div>
+
+      <form class="c-form" id="contact-form" novalidate>
+        <div class="fg" id="row-nombre">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+          <p class="field-error">Escribe tu nombre completo.</p>
+        </div>
+        <div class="fg" id="row-correo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@correo.com">
+          <p class="field-error">Escribe un correo válido.</p>
+        </div>
+        <div class="fg" id="row-asunto">
+          <label for="asunto">Asunto</label>
+          <select id="asunto" name="asunto">
+            <option value="">Selecciona una opción</option>
+            <option value="Pregunta general">Pregunta general</option>
+            <option value="Comentario sobre el proyecto">Comentario sobre el proyecto</option>
+            <option value="Quiero compartir información">Quiero compartir información</option>
+            <option value="Otro">Otro</option>
+          </select>
+          <p class="field-error">Selecciona un asunto.</p>
+        </div>
+        <div class="fg" id="row-mensaje">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+          <p class="field-error">Tu mensaje debe tener al menos 10 caracteres.</p>
+        </div>
+        <button type="submit" class="submit-btn">📨 Enviar mensaje</button>
+        <div class="form-success" id="contact-success">¡Mensaje enviado! Gracias por escribirnos.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FOOTER
+═══════════════════════════════════ -->
+<footer>
+  <div class="footer-links">
+    <a href="#inicio">Inicio</a>
+    <a href="#informacion">Información</a>
+    <a href="#video">Video</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#encuesta">Encuesta</a>
+    <a href="#recursos">Ayuda</a>
+    <a href="#proyecto">Proyecto</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <p>Mente Libre — Prevención de Adicciones © <span id="year"></span></p>
+  <p>Proyecto Educativo Comunitario (PEC) — CECYTEM</p>
+  <p>Equipo: Lizandro Enriquez Cruz · Axel Gabriel Acevedo Jimenez · Cesar Sanches Orozco</p>
+  <div class="hit-counter" aria-label="Contador de visitas">
+    👁️ VISITAS: <span class="digits" id="hitCounter">000000</span>
+  </div>
+  <p class="mejor-visto">🖥️ Esta página se ve mejor en 800x600 — Optimizada para Internet Explorer 6</p>
+</footer>
+
+<!-- Botón flotante de ayuda -->
+<div class="help-float">
+  <div class="help-bubble" id="helpBubble">
+    Recuerda: pedir ayuda es de valientes 💛<br><strong>800-911-2000</strong>
+  </div>
+  <button class="help-float-btn" id="helpFloatBtn" aria-label="Mostrar mensaje de apoyo">🌿</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
